@@ -20,9 +20,9 @@ export type Data = {
     duration: number;
     notify_fail: boolean;
 }
-export type CreationData = {
+export type CreatedOrDeletedData = {
     error: boolean;
-    id: string;
+    message: string;
     scheduled: string;
 }
 export { Prohooks } from "./Prohooks";

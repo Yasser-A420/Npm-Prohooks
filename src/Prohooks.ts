@@ -1,4 +1,4 @@
-import { ApiOptions, Data, BodyOptions, CreationData } from "./index";
+import { ApiOptions, Data, BodyOptions, CreatedOrDeletedData } from "./index";
 export class Prohooks {
     apiKey: string
     apiUrl: string;
@@ -6,12 +6,12 @@ export class Prohooks {
         this.apiKey = apiKey;
         this.apiUrl = options?.baseUrl ?? "https://api.prohooks.xyz/timers";
     }
-    async create(options: BodyOptions): Promise<CreationData> {
+    async create(options: BodyOptions): Promise<CreatedOrDeletedData> {
         return new Promise(async (resolve, reject) => {
             const request = await fetch(`${this.apiUrl}/new`, { mode: "cors", headers: { authorization: this.apiKey, "Content-Type": "application/json" }, method: "PUT", body: JSON.stringify({ name: options.name, method: options.method, url: options.url, duration: options.duration, payload: options.payload, headers: options.headers, include_details: options.include_details ?? false }) });
             if (request.status >= 200 && request.status < 300) {
                 const json = await request.json();
-                resolve({id: json.message, scheduled: json.scheduled, error: json.error});
+                resolve({message: json.message, scheduled: json.scheduled, error: json.error});
             } else {
                 const json = await request.text();
                 reject(new Error(json));
@@ -42,12 +42,12 @@ export class Prohooks {
             }
         });
     }
-    async delete(timerId: string): Promise<Data> {
+    async delete(timerId: string): Promise<CreatedOrDeletedData> {
         return new Promise(async (resolve, reject) => {
             const request = await fetch(`${this.apiUrl}/timers/${timerId}`, { headers: { authorization: this.apiKey }, method: "DELETE" });
             if (request.status >= 200 && request.status < 300) {
-                const json = await request.json() as Data;
-                resolve(json);
+                const json = await request.json();
+                resolve({message: json.message, scheduled: "Cancelled", error: json.error});
             } else {
                 const json = await request.text();
                 reject(new Error(json));

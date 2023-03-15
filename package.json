@@ -1,23 +1,33 @@
 {
   "name": "prohooks",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
+  "description": "The offical API wrapper for the Progooks API",
   "type": "module",
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": "./dist/index.mjs",
-			"require": "./dist/index.cjs"
-		}
-	},
-	"main": "./dist/index.cjs",
-	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "pro hook",
+    "prohooks",
+    "prohook",
+    "timers"
+  ],
+  "author": "Yasser",
+  "license": "ISC",
+  "dependencies": {
+    "undici": "^5.21.0"
+  }
 }

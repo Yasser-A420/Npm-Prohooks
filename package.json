@@ -1,6 +1,6 @@
 {
   "name": "prohooks",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "The offical API wrapper for the Progooks API",
   "type": "module",
   "exports": {

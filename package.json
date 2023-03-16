@@ -1,10 +1,12 @@
 {
   "name": "prohooks",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "The offical API wrapper for the Prohooks API",
   "type": "module",
   "homepage": "https://prohooks.xyz/",
-  "email": "admin@prohooks.xyz",
+ bugs: {
+   "email": "admin@prohooks.xyz"
+   }
   "licenses": [
   "license": "MIT"
   ],
@@ -25,7 +27,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "pro hook",
+    "prohook",
     "prohooks",
     "prohook",
     "timers",

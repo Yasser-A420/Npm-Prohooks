@@ -7,7 +7,8 @@ This is the official wrapper for the Prohooks API. With Prohooks, you can easily
 
 You can install Prohooks using npm:
 ```diff
-+ npm install prohooks```
++ npm install prohooks
+```
 
 ## Usage
 

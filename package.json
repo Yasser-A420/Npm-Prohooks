@@ -3,7 +3,7 @@
   "version": "1.0.7",
   "description": "The offical API wrapper for the Prohooks API",
   "type": "module",
-  "homepage": "https://github.com/prohooks/nodejs",
+  "homepage": "https://prohooks.xyz/",
   "email": "admin@prohooks.xyz",
   "licenses": [
   "license": "MIT"

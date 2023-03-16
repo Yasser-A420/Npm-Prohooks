@@ -1,8 +1,11 @@
 {
   "name": "prohooks",
-  "version": "1.0.6",
-  "description": "The offical API wrapper for the Progooks API",
+  "version": "1.0.7",
+  "description": "The offical API wrapper for the Prohooks API",
   "type": "module",
+  "homepage": "https://github.com/prohooks/nodejs",
+  "email": "admin@prohooks.xyz",
+  "license": "MIT",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -23,7 +26,13 @@
     "pro hook",
     "prohooks",
     "prohook",
-    "timers"
+    "timers",
+    "webhooks",
+    "scheduler"
+  ],
+  "contributors": [
+  "Mezbatheking",
+  "Yasser"
   ],
   "author": "Yasser",
   "license": "ISC",

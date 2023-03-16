@@ -23,17 +23,17 @@ const prohooks = new Prohooks("yourapikeyhere")
 
 ```
 
-Example code for Getting a Scheduler info:
+Example of how to get a schedulers info:
 
 ```js
 
-let info = await prohooks.get("timeridhere")
+const info = await prohooks.get("timeridhere")
 
 console.log(info)
 
 ```
 
-Example code for creating a timer:
+Example of creating a new timer:
 
 ```js
 

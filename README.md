@@ -6,12 +6,13 @@ This is the official wrapper for the Prohooks API. With Prohooks, you can easily
 ## Installation
 
 You can install Prohooks using npm:
-
+```diff
 npm install prohooks
+```
 
 ## Usage
 
-Here's an example of how you can create a new client and use it to get scheduler info and create a timer:
+Here's an example of how you can create a new client and use it to get scheduler info and create a timer and delete a timer:
 
 Example code for creating a new Client:
 
@@ -37,7 +38,14 @@ Example of creating a new timer:
 
 ```js
 
-const created = await prohooks.create({name: "Hook name", url: "https://google.com", headers: {"Content-Type": "application/json"}, method: "GET", payload: {}, duration: "10m"});
+const created = await prohooks.create({
+name: "Hook name",
+url: "https://google.com", 
+headers: {"Content-Type": "application/json"},
+method: "GET", 
+payload: { "key": "value" },
+duration: "10m"});
+return created
 
 ```
 

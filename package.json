@@ -4,7 +4,7 @@
   "description": "The offical API wrapper for the Prohooks API",
   "type": "module",
   "homepage": "https://prohooks.xyz/",
- bugs: {
+  "bugs": {
    "email": "admin@prohooks.xyz"
    },
   "licenses": [
@@ -27,7 +27,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "prohook",
+    "pro hook",
     "prohooks",
     "prohook",
     "timers",

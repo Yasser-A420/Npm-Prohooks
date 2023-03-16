@@ -5,7 +5,9 @@
   "type": "module",
   "homepage": "https://github.com/prohooks/nodejs",
   "email": "admin@prohooks.xyz",
-  "license": "MIT",
+  "licenses": [
+  "license": "MIT"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

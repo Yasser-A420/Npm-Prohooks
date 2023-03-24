@@ -1,47 +1,44 @@
 {
 
-	"name": "prohooks",
-	"version": "1.0.8",
-	"description": "The offical API wrapper for the Prohooks API",
-	"type": "module",
-	"homepage": "https://prohooks.xyz/",
-	"bugs": {
-		"email": "admin@prohooks.xyz"
-	},
-	"licenses": {
-		"license": "MIT"
-	},
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": "./dist/index.mjs",
-			"require": "./dist/index.cjs"
-		}
-	},
-	"main": "./dist/index.cjs",
-	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.ts",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [
-		"pro hook",
-		"prohooks",
-		"prohook",
-		"timers",
-		"webhooks",
-		"scheduler"
-	],
-	"contributors": [
-		"Mezbatheking",
-		"Yasser"
-	],
-	"author": "Yasser",
-	"license": "ISC",
-	"dependencies": {
-		"undici": "^5.21.0"
-	}
+  "name": "prohooks",
+  "version": "1.0.8",
+  "description": "The offical API wrapper for the Prohooks API",
+  "type": "module",
+  "homepage": "https://prohooks.xyz/",
+  "bugs": {
+    "email": "admin@prohooks.xyz"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pro hook",
+    "prohooks",
+    "prohook",
+    "timers",
+    "webhooks",
+    "scheduler"
+  ],
+  "contributors": [
+    "Mezbatheking",
+    "Yasser"
+  ],
+  "author": "Yasser",
+  "license": "ISC",
+  "dependencies": {
+    "undici": "^5.21.0"
+  }
 }

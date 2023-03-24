@@ -72,7 +72,7 @@ export class ProHooks {
             const response = await request(`${this.#apiUrl}/timers/${timerId}`, { headers: { authorization: this.#apiKey, "Content-Type": "application/errorText" }, method: "PATCH", body: JSON.stringify({ name: options.name, method: options.method, url: options.url, duration: options.duration, payload: options.payload, headers: options.headers, include_details: options.include_details }) });
 
             if (response.statusCode >= 200 && response.statusCode < 300)
-                resolve( await response.body.json() as IData);
+                resolve(await response.body.json() as IData);
 
             reject(new Error(await response.body.text()));
         });

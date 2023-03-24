@@ -1,7 +1,7 @@
 {
 
   "name": "prohooks",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "The offical API wrapper for the Prohooks API",
   "type": "module",
   "homepage": "https://prohooks.xyz/",

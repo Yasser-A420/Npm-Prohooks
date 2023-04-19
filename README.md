@@ -18,7 +18,7 @@ Example code for creating a new Client:
 
 ```js
 // for common JS
-const { Prohooks } = require("prohooks");
+const { ProHooks } = require("prohooks");
 // for ESX
 import { ProHooks } from "prohooks";
 
